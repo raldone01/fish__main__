@@ -46,7 +46,7 @@ Observe how `Hello world` is being printed upon launching the fish shell/contain
 
 `C> /root/.config/fish/my_functions/hello_world.fish`
 
-`Hello world` will be printed as expected.
+`Hello world` will be printed as expected. (Twice?!?)
 
 `C> exit`
 
