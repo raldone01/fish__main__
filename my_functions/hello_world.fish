@@ -1,4 +1,4 @@
-#!/bin/fish
+#!/usr/bin/fish
 function hello_world --description "Print hello world"
     echo "Hello world"
 end
