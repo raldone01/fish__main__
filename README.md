@@ -1,5 +1,7 @@
 # `__main__` in fish
 
+Exsisting issue https://github.com/fish-shell/fish-shell/issues/4877
+
 ## Problem statement
 
 Find a way to check whether the current `.fish` file has been directly executed or if it was sourced.
@@ -7,6 +9,16 @@ Find a way to check whether the current `.fish` file has been directly executed 
 ### Why
 
 This allows one to write scripts that can be directly called like scripts or sourced to be made available as commands for repeated/later use.
+
+## 3.6.1 working solution
+
+```fish
+if string match -q -- "*from sourcing file*" (status)
+    echo "file was sourced"
+else
+    echo "file was not sourced"
+end
+```
 
 ## Current partly working solution
 
