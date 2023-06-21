@@ -62,3 +62,8 @@ Observe how `Hello world` is being printed upon launching the fish shell/contain
 `./my_functions/hello_world.fish`
 
 `Hello world` will be printed as expected.
+
+## Infinite loop?
+I added a section to the `config.fish` that directly runs the `hello_world` file.
+It creates an infinite loop.
+I am not sure why this happens.
